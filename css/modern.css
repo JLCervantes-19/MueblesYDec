@@ -18,14 +18,13 @@
   --shadow-sm:     0 4px 16px rgba(0,0,0,0.08);
   --shadow-md:     0 8px 32px rgba(0,0,0,0.12);
   --shadow-lg:     0 16px 48px rgba(0,0,0,0.18);
-  --shadow-green:  0 8px 30px rgba(122,183,48,0.35);
+  --shadow-primary: 0 8px 30px rgba(158,92,37,0.35);
   --radius-sm: 10px;
   --radius-md: 16px;
   --radius-pill: 50px;
-  --primary-rgb: 122, 183, 48;
-  --primary-light: rgba(122, 183, 48, 0.14);
-  --primary-dark-color: #5f8f25;
-  --accent: #9e5c25;
+  --primary-rgb: 158, 92, 37;
+  --primary-light: rgba(158, 92, 37, 0.13);
+  --primary-dark-color: #7a3d10;
   --ease-out:   cubic-bezier(0.25, 0.46, 0.45, 0.94);
   --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
   --t-base:   0.4s var(--ease-out);
@@ -50,7 +49,7 @@
   font-family: 'Poppins', sans-serif;
   font-size: 3rem;
   font-weight: 700;
-  color: var(--primary, #7AB730);
+  color: var(--primary, #9e5c25);
   animation: loaderPulse 1.3s ease-in-out infinite;
   letter-spacing: -2px;
 }
@@ -67,7 +66,7 @@
   top: 0; left: 0;
   height: 3px;
   width: 0%;
-  background: linear-gradient(90deg, var(--primary, #7AB730) 0%, #c5e87a 100%);
+  background: linear-gradient(90deg, var(--primary, #9e5c25) 0%, #e8c9a0 100%);
   z-index: 99999;
   transition: width 0.08s linear;
   pointer-events: none;
@@ -133,7 +132,7 @@
   display: inline-block;
   padding: 5px 20px;
   background: var(--primary-light);
-  border: 1px solid rgba(122,183,48,0.3);
+  border: 1px solid rgba(158,92,37,0.3);
   border-radius: var(--radius-pill);
   color: var(--primary-dark-color);
   font-size: 0.75rem;
@@ -142,9 +141,9 @@
   text-transform: uppercase;
 }
 .section-pill--light {
-  background: rgba(122,183,48,0.12);
-  border-color: rgba(122,183,48,0.28);
-  color: #c6e87e;
+  background: rgba(158,92,37,0.12);
+  border-color: rgba(158,92,37,0.28);
+  color: #e8c9a0;
 }
 
 /* ──────────────────────────────────────────
@@ -196,7 +195,7 @@
 }
 .nav-transparent .navbar-light .navbar-nav .nav-link { color: rgba(255,255,255,0.92) !important; }
 .nav-transparent .navbar-light .navbar-nav .nav-link:hover,
-.nav-transparent .navbar-light .navbar-nav .nav-link.active { color: #c5e87a !important; }
+.nav-transparent .navbar-light .navbar-nav .nav-link.active { color: #e8c9a0 !important; }
 .nav-transparent .navbar-brand h1 .text-dark { color: #fff !important; }
 
 /* Scrolled glass state */
@@ -262,7 +261,7 @@
   font-size: 0.8rem;
   letter-spacing: 6px;
   text-transform: uppercase;
-  color: #c5e87a;
+  color: #e8c9a0;
   margin-bottom: 1.2rem;
   opacity: 0;
   transform: translateY(22px);
@@ -313,7 +312,7 @@
   background: rgba(var(--primary-rgb), 0.52);
   border-color: rgba(var(--primary-rgb), 0.85);
   transform: translateY(-3px);
-  box-shadow: var(--shadow-green);
+  box-shadow: var(--shadow-primary);
   color: #fff !important;
 }
 
@@ -356,7 +355,7 @@
 .carousel-indicators .active {
   width: 30px;
   border-radius: 4px;
-  background: var(--primary, #7AB730);
+  background: var(--primary, #9e5c25);
 }
 
 /* ──────────────────────────────────────────
@@ -382,7 +381,7 @@
 .about-badge .badge-num {
   font-size: 2rem;
   font-weight: 700;
-  color: var(--primary, #7AB730);
+  color: var(--primary, #9e5c25);
   line-height: 1;
   display: block;
 }
@@ -432,8 +431,8 @@
   border: 1px solid rgba(var(--primary-rgb), 0.2);
 }
 .feature-glass-card:hover .feature-icon {
-  background: var(--primary, #7AB730);
-  border-color: var(--primary, #7AB730);
+  background: var(--primary, #9e5c25);
+  border-color: var(--primary, #9e5c25);
   transform: scale(1.12) rotate(6deg);
 }
 .feature-icon--accent { background: rgba(158,92,37,0.1); border-color: rgba(158,92,37,0.2); }
@@ -502,7 +501,7 @@
    TESTIMONIALS — Dark Glass
 ────────────────────────────────────────── */
 .testimonials-section {
-  background: linear-gradient(150deg, #181818 0%, #1e2d0e 100%);
+  background: linear-gradient(150deg, #181818 0%, #1e120a 100%);
   position: relative;
   overflow: hidden;
 }
@@ -543,10 +542,10 @@
   margin: 0 auto 16px;
   display: block;
 }
-.t-card-stars { color: var(--primary, #7AB730); margin-bottom: 14px; letter-spacing: 2px; }
+.t-card-stars { color: var(--primary, #9e5c25); margin-bottom: 14px; letter-spacing: 2px; }
 .t-card p { color: rgba(255,255,255,0.78); font-size: 0.91rem; line-height: 1.72; margin-bottom: 18px; }
 .t-card h5 { color: #fff; font-size: 0.98rem; margin-bottom: 3px; }
-.t-card span { color: var(--primary, #7AB730); font-size: 0.8rem; font-weight: 500; }
+.t-card span { color: var(--primary, #9e5c25); font-size: 0.8rem; font-weight: 500; }
 
 /* Owl dots override for testimonials */
 .testimonials-section .testimonial-carousel .owl-dots { margin-top: 8px; }
@@ -555,7 +554,7 @@
   border-radius: 50%;
 }
 .testimonials-section .testimonial-carousel .owl-dot.active {
-  background: var(--primary, #7AB730) !important;
+  background: var(--primary, #9e5c25) !important;
   width: 34px !important;
   border-radius: 4px !important;
 }
@@ -564,7 +563,7 @@
    FOOTER — Dark Liquid Glass
 ────────────────────────────────────────── */
 .footer-glass {
-  background: linear-gradient(150deg, #161616 0%, #1a2c0c 100%);
+  background: linear-gradient(150deg, #161616 0%, #1a0f06 100%);
   position: relative;
   overflow: hidden;
 }
@@ -575,7 +574,7 @@
 }
 .footer-brand h1 {
   font-size: 2.6rem !important;
-  color: var(--primary, #7AB730) !important;
+  color: var(--primary, #9e5c25) !important;
   position: static !important;
   transform: none !important;
   top: auto !important; left: auto !important;
@@ -589,7 +588,7 @@
   font-size: 0.9rem;
   transition: color var(--t-base), padding-left var(--t-base);
 }
-.footer-link:hover { color: var(--primary, #7AB730); text-decoration: none; padding-left: 6px; }
+.footer-link:hover { color: var(--primary, #9e5c25); text-decoration: none; padding-left: 6px; }
 .footer-social-btn {
   display: inline-flex;
   align-items: center;
@@ -604,8 +603,8 @@
   margin-right: 8px;
 }
 .footer-social-btn:hover {
-  background: var(--primary, #7AB730);
-  border-color: var(--primary, #7AB730);
+  background: var(--primary, #9e5c25);
+  border-color: var(--primary, #9e5c25);
   color: #fff !important;
   transform: translateY(-3px);
 }
@@ -636,8 +635,8 @@
   justify-content: center !important;
 }
 .back-to-top:hover {
-  background: var(--primary, #7AB730) !important;
-  border-color: var(--primary, #7AB730) !important;
+  background: var(--primary, #9e5c25) !important;
+  border-color: var(--primary, #9e5c25) !important;
   transform: translateY(-5px) !important;
   box-shadow: 0 10px 32px rgba(var(--primary-rgb), 0.48) !important;
 }
